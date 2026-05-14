@@ -1,0 +1,124 @@
+#------------------------------------------------------------------------------
+#$Date: 2016-03-02 09:51:31 +0200 (Wed, 02 Mar 2016) $
+#$Revision: 177123 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/5/91/00/5910078.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_5910078
+_chemical_formula_structural     MgZn2
+_chemical_formula_sum            'Mg Zn2'
+_chemical_name_systematic        mgZn2
+_space_group_IT_number           194
+_symmetry_cell_setting           hexagonal
+_symmetry_space_group_name_Hall  '-P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63/m m c'
+_cell_formula_units_Z            4
+_audit_creation_date             2005-30-10
+_audit_creation_method
+;
+The Structure of Crystals by Wyckoff &
+http://cst-www.nrl.navy.mil/lattice
+;
+_audit_update_record
+;Created by Girish Upreti, Portland State University.
+2011-06-21 Edited by Saulius Gra\<zulis, after the bug 
+           report of Stefaan Cottenier; consulted
+           http://cst-www.nrl.navy.mil/lattice/struk/c14.html
+;
+_cod_depositor_comments
+;
+A bug report was received from Stefaan Cottenier:
+------------------------------------------------------------------------------
+From: Stefaan Cottenier <Stefaan.Cottenier@xyzt.be>
+To:   Saulius Grazulis <grazulis@xyz.lt>
+Date: 2011-06-21 14:49
+
+/.../
+Let me take this occasion to mention something which I noticed 
+yesterday, while depositing this and other files: is the MgZn2 cif file 
+which is in COD a correct one? MgZn2 is the prototype for the YTc2 and 
+ZrTc2 structures which I deposited yesterday. Yet, according to the cif 
+in COD, it has only 2 wyckoff positions, while it should have 3 (6h 
+seems to be missing). This is confirmed by 
+http://cst-www.nrl.navy.mil/lattice/struk/c14.html, which is quoted as 
+the source where this COD cif file was derived from.
+------------------------------------------------------------------------------
+
+The checks using 'cif_cell_contents -Z=4' filter indictated
+composition derived from the 5910078.cif revision r1090 that was not
+consistent with the chemical formula provided in the file. In
+addition, two the Mg and the two Zn atoms were on the
+crystallographically equivalent positions. Comparison with the YTc2
+structure and with the
+http://cst-www.nrl.navy.mil/lattice/struk.xmol/c14.pos file showed
+that most likely the wrong coordinate lines were picked.
+
+Following this bug report, the following changes in the entry have
+been made:
+
+a) fractional coordinates were picked from
+http://cst-www.nrl.navy.mil/lattice/struk.xmol/c14.pos that are
+equivalent to positions reported in the YTc2 structure (COD file
+1501465.cif);
+
+b) Wyckoff letters and multiplicities were taken from the 1501465.cif
+file, and checked against the International Tables (5th ed., 2002,
+vol. A, p. 601);
+
+c) _cell_formula_units_Z were set to 4, as in the YTc2 structure
+(1501465.cif), and as are consistent with the provided
+_chemical_formula_sum.
+
+Saulius Gra\<zulis
+2011-06-21
+;
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_length_a                   5.15
+_cell_length_b                   5.15
+_cell_length_c                   8.48
+_cell_volume                     194.778
+_cod_database_code               5910078
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+y,-x+y,z+1/2
+-y,x-y,z
+-x+y,-x,z
+x-y,-y,-z
+-x,-x+y,-z
+-x,-y,z+1/2
+y,x,-z
+-y,-x,-z+1/2
+-x+y,y,-z+1/2
+x,x-y,-z+1/2
+-x,-y,-z
+-x+y,-x,-z+1/2
+-y,x-y,-z+1/2
+y,-x+y,-z
+x-y,x,-z
+-x+y,y,z
+x,x-y,z
+x,y,-z+1/2
+-y,-x,z
+y,x,z+1/2
+x-y,-y,z+1/2
+-x,-x+y,z+1/2
+loop_
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_label
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+0.33333333 0.66666667 0.06680525 Mg1 4 f
+0.00000000 0.00000000 0.00000000 Zn1 2 a
+0.33976834 0.16988417 0.25000000 Zn2 6 h

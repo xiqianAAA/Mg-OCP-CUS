@@ -1,0 +1,88 @@
+#------------------------------------------------------------------------------
+#$Date: 2025-08-18 18:02:58 +0300 (Mon, 18 Aug 2025) $
+#$Revision: 301777 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/52/29/1522922.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1522922
+loop_
+_publ_author_name
+'Smith, J.F.'
+'Bailey, D.M.'
+'Novotny, D.B.'
+'Davison, J.E.'
+_publ_section_title
+;
+ Thermodynamics of formation of yttrium-magnesium intermediate phase
+;
+_journal_name_full               'Acta Metallurgica'
+_journal_page_first              889
+_journal_page_last               895
+_journal_volume                  13
+_journal_year                    1965
+_chemical_formula_sum            'Mg2 Y'
+_space_group_IT_number           194
+_symmetry_space_group_name_Hall  '-P 6c 2c'
+_symmetry_space_group_name_H-M   'P 63/m m c'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                120
+_cell_formula_units_Z            4
+_cell_length_a                   6.037
+_cell_length_b                   6.037
+_cell_length_c                   9.752
+_cell_volume                     307.799
+_citation_journal_id_ASTM        AMETAR
+_cod_data_source_file            Smith_AMETAR_1965_1103.cif
+_cod_data_source_block           Mg2Y1
+_cod_original_cell_volume        307.7986
+_cod_original_formula_sum        'Mg2 Y1'
+_cod_database_code               1522922
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+x-y,x,z+1/2
+-y,x-y,z
+-x,-y,z+1/2
+-x+y,-x,z
+y,-x+y,z+1/2
+-y,-x,-z+1/2
+x-y,-y,-z
+x,x-y,-z+1/2
+y,x,-z
+-x+y,y,-z+1/2
+-x,-x+y,-z
+-x,-y,-z
+-x+y,-x,-z-1/2
+y,-x+y,-z
+x,y,-z-1/2
+x-y,x,-z
+-y,x-y,-z-1/2
+y,x,z-1/2
+-x+y,y,z
+-x,-x+y,z-1/2
+-y,-x,z
+x-y,-y,z-1/2
+x,x-y,z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_U_iso_or_equiv
+Mg2 Mg 0.8409 0.6818 0.25 1 0.0
+Mg1 Mg 0 0 0 1 0.0
+Y1 Y 0.3333 0.6667 0.626 1 0.0
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 PubChem 139045830
